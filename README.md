@@ -1,2 +1,2 @@
 # esports-graphics.github.io
-FSES WEBSIT
+FSES WEBSITE
