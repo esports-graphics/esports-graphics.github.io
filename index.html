@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Fresno State Esports custom rebuild for GitHub Pages." />
+  <title>Fresno State Esports</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="page-bg"></div>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <button class="brand" data-page="home" aria-label="Go to home">
+        <img
+          src="https://static.wixstatic.com/media/522e0c_346497d769294d8f9b6b5ef2befa4afb~mv2.png/v1/fill/w_470,h_470,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/522e0c_346497d769294d8f9b6b5ef2befa4afb~mv2.png"
+          alt="Fresno State Esports logo"
+        />
+        <span>
+          <strong>Fresno State</strong>
+          <small>Esports</small>
+        </span>
+      </button>
+
+      <nav class="desktop-nav" aria-label="Main navigation">
+        <button data-page="home">Home</button>
+        <button data-page="teams">Teams</button>
+        <button data-page="overwatch">Overwatch</button>
+        <button data-page="valorant">VALORANT</button>
+        <button data-page="league">League of Legends</button>
+        <button data-page="blog">Blog</button>
+        <button data-page="jobs">Jobs</button>
+        <button data-page="shop">Shop</button>
+        <button data-page="calendar">Full Calendar</button>
+        <button data-page="members">Members</button>
+      </nav>
+
+      <div class="header-actions">
+        <button id="memberButton" class="member-button">Sign In</button>
+        <button id="mobileToggle" class="mobile-toggle" aria-label="Toggle menu">☰</button>
+      </div>
+    </div>
+
+    <div id="mobileNav" class="mobile-nav" hidden>
+      <button data-page="home">Home</button>
+      <button data-page="teams">Teams</button>
+      <button data-page="overwatch">Overwatch</button>
+      <button data-page="valorant">VALORANT</button>
+      <button data-page="league">League of Legends</button>
+      <button data-page="blog">Blog</button>
+      <button data-page="jobs">Jobs</button>
+      <button data-page="shop">Shop</button>
+      <button data-page="calendar">Full Calendar</button>
+      <button data-page="members">Members</button>
+    </div>
+  </header>
+
+  <main class="container main-content">
+    <section class="hero-grid">
+      <article class="card hero-copy">
+        <p class="eyebrow">Central Valley Esports</p>
+        <h1>Fresno State Esports</h1>
+        <p class="lead">
+          The most ambitious esports organization in the Central Valley. Explore teams,
+          campus opportunities, news, student leadership, and events.
+        </p>
+        <div class="button-row">
+          <button class="button button-primary" data-page="teams">Explore Teams</button>
+          <button class="button button-secondary" data-page="jobs">Get Involved</button>
+        </div>
+      </article>
+
+      <article class="card hero-image-card">
+        <div class="hero-image-wrap">
+          <img
+            src="https://static.wixstatic.com/media/522e0c_346497d769294d8f9b6b5ef2befa4afb~mv2.png/v1/fill/w_470,h_470,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/522e0c_346497d769294d8f9b6b5ef2befa4afb~mv2.png"
+            alt="Fresno State Esports logo"
+          />
+          <div class="hero-overlay"></div>
+          <div class="hero-note">
+            <p class="eyebrow">Student-led</p>
+            <p>Built around competition, campus events, community, and long-term growth.</p>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <section class="card search-section">
+      <div class="section-head split">
+        <div>
+          <p class="eyebrow">Search</p>
+          <h2>Find pages, teams, posts, and opportunities</h2>
+        </div>
+        <label class="search-box">
+          <span>🔎</span>
+          <input id="searchInput" type="text" placeholder="Search the site..." />
+        </label>
+      </div>
+      <div id="searchResults" class="search-results"></div>
+    </section>
+
+    <section class="section-block">
+      <div class="section-head">
+        <p class="eyebrow">Teams</p>
+        <h2>Competitive programs and club opportunities</h2>
+        <p class="section-text">A custom-coded replacement for the Wix team pages and navigation routes.</p>
+      </div>
+      <div class="grid grid-4">
+        <article class="card team-card">
+          <div class="team-top orange"></div>
+          <div class="card-body">
+            <p class="mini-label">Roster</p>
+            <h3>Overwatch</h3>
+            <p>Competitive roster, tryouts, coaching, and team development.</p>
+          </div>
+        </article>
+        <article class="card team-card">
+          <div class="team-top red"></div>
+          <div class="card-body">
+            <p class="mini-label">Roster</p>
+            <h3>VALORANT</h3>
+            <p>Structured collegiate competition with player development and practice support.</p>
+          </div>
+        </article>
+        <article class="card team-card">
+          <div class="team-top blue"></div>
+          <div class="card-body">
+            <p class="mini-label">Roster</p>
+            <h3>League of Legends</h3>
+            <p>Core competitive team with recruiting, leadership, and match preparation.</p>
+          </div>
+        </article>
+        <article class="card team-card">
+          <div class="team-top purple"></div>
+          <div class="card-body">
+            <p class="mini-label">Roster</p>
+            <h3>Marvel Rivals</h3>
+            <p>Emerging title support for students joining the program in Fall 2025.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section-block">
+      <div class="section-head">
+        <p class="eyebrow">News</p>
+        <h2>Updates, announcements, and event recaps</h2>
+        <p class="section-text">This stands in for the Wix blog and post pages while keeping the visual energy of the original site.</p>
+      </div>
+      <div class="grid grid-3">
+        <article class="card post-card">
+          <div class="card-body">
+            <p class="mini-label">November 5, 2024</p>
+            <h3>Recap: Fresno State Esports Expo Returns After 3 Years</h3>
+            <p>For the first time in three years, Fresno State Esports, in collaboration with the Hype Club, hosted a collegiate LAN event.</p>
+          </div>
+        </article>
+        <article class="card post-card">
+          <div class="card-body">
+            <p class="mini-label">Fall 2025 Recruitment</p>
+            <h3>Want to join Fresno State Esports in Fall 2025?</h3>
+            <p>Competitive, club, and behind-the-scenes roles are open for students interested in Overwatch, VALORANT, Marvel Rivals, and League of Legends.</p>
+          </div>
+        </article>
+        <article class="card post-card">
+          <div class="card-body">
+            <p class="mini-label">Community</p>
+            <h3>Building the Central Valley esports community</h3>
+            <p>A community-first push to grow campus gaming, events, and student leadership.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="grid grid-2 section-block">
+      <article class="card padded">
+        <p class="eyebrow">Join</p>
+        <h2>Want to join Fresno State Esports in Fall 2025?</h2>
+        <p class="section-text">We have opened competitive, club, and behind-the-scenes roles for Fall 2025. Take part in Overwatch, VALORANT, Marvel Rivals, and League of Legends.</p>
+        <div class="button-row top-gap">
+          <button class="button button-primary">Apply / Interest Form</button>
+          <button class="button button-secondary">Contact the Org</button>
+        </div>
+      </article>
+      <article class="card padded">
+        <p class="eyebrow">Open Roles</p>
+        <div class="pill-grid">
+          <span>Competitive player</span>
+          <span>Club officer</span>
+          <span>Broadcast / production</span>
+          <span>Social media / content</span>
+          <span>Event support</span>
+          <span>Team manager</span>
+        </div>
+      </article>
+    </section>
+
+    <section class="section-block">
+      <div class="section-head">
+        <p class="eyebrow">Shop</p>
+        <h2>Merchandise preview</h2>
+        <p class="section-text">A front-end replacement for the Shop route. On GitHub Pages, you can later link these to Shopify or Stripe checkout pages.</p>
+      </div>
+      <div class="grid grid-4">
+        <article class="card shop-card"><div class="shop-icon">🛍️</div><div class="card-body"><h3>Team Hoodie</h3><p>$45</p></div></article>
+        <article class="card shop-card"><div class="shop-icon">🛍️</div><div class="card-body"><h3>Logo Tee</h3><p>$25</p></div></article>
+        <article class="card shop-card"><div class="shop-icon">🛍️</div><div class="card-body"><h3>Sticker Pack</h3><p>$8</p></div></article>
+        <article class="card shop-card"><div class="shop-icon">🛍️</div><div class="card-body"><h3>Jersey Mockup</h3><p>$60</p></div></article>
+      </div>
+    </section>
+
+    <section class="grid grid-2 section-block">
+      <article class="card padded">
+        <p class="eyebrow">Full Calendar</p>
+        <h2>Events, matches, and campus activity</h2>
+        <p class="section-text">This section replaces the Wix Full Calendar page with a clean visual block. Later, you can embed Google Calendar or FullCalendar here.</p>
+      </article>
+      <article class="card padded">
+        <div class="calendar-grid">
+          <div><strong>Mon</strong><span>Scrims</span></div>
+          <div><strong>Tue</strong><span>Club Meeting</span></div>
+          <div><strong>Wed</strong><span>Valorant Practice</span></div>
+          <div><strong>Thu</strong><span>Broadcast Night</span></div>
+          <div><strong>Fri</strong><span>Match Day</span></div>
+          <div><strong>Sat</strong><span>Community Event</span></div>
+        </div>
+      </article>
+    </section>
+
+    <section class="section-block">
+      <article class="card padded">
+        <div class="section-head split members-head">
+          <div>
+            <p class="eyebrow">Members Area</p>
+            <h2 id="memberTitle">Sign in to access member features</h2>
+            <p class="section-text">This is the front-end shell for the Wix members area. Replace this with Supabase, Firebase Auth, Clerk, or another auth provider when you are ready.</p>
+          </div>
+          <div class="button-row">
+            <button id="demoSignIn" class="button button-primary">Demo Sign In</button>
+            <button id="demoSignOut" class="button button-secondary">Sign Out</button>
+          </div>
+        </div>
+        <div class="grid grid-3 top-gap" id="memberCards">
+          <div class="member-card"><strong>Profile</strong><span>Requires sign-in</span></div>
+          <div class="member-card"><strong>Team status</strong><span>Requires sign-in</span></div>
+          <div class="member-card"><strong>Saved posts</strong><span>Requires sign-in</span></div>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h3>Fresno State Esports</h3>
+        <p>A clean custom-coded rebuild of the original Wix site, designed to be easier to host, extend, and move to GitHub.</p>
+      </div>
+      <div>
+        <p class="eyebrow">Quick Links</p>
+        <ul>
+          <li>Home</li>
+          <li>Teams</li>
+          <li>Blog</li>
+          <li>Jobs</li>
+        </ul>
+      </div>
+      <div>
+        <p class="eyebrow">Resources</p>
+        <ul>
+          <li><a href="https://equity.fresnostate.edu/ccgc/american-indian/landacknowledgement.html" target="_blank" rel="noreferrer">Land Acknowledgement</a></li>
+          <li><a href="https://docs.google.com/document/d/1ucIG_-r1yHMSlxsHax1xP_q4lzvwxYwbsWeVaa_cRxg/edit?usp=sharing" target="_blank" rel="noreferrer">Esports Handbook</a></li>
+          <li><a href="https://www.instagram.com/fresnostatees/" target="_blank" rel="noreferrer">Instagram</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <div class="active-indicator">Active page: <span id="activePageLabel">home</span></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
